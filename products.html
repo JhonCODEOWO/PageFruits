@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - ZacatlánFruit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-general">
+    <header class="header bg-principal">
+        <div class="contenedor contenido__header">
+            <div class="header__titulo">
+                <h2>ZacatlánFruit</h2>
+                <p class="no-margin no-padding">La cultura frutal</p>
+                <p id="btn-menu" class="menu no-margin no-padding">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="28"
+                        height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4 6l16 0" />
+                        <path d="M4 12l16 0" />
+                        <path d="M4 18l16 0" />
+                    </svg>
+                </p>
+            </div>
+            <nav id="nav-header" class="header__navegacion">
+                <a href="index.html" class="navegacion__enlace">Inicio</a>
+                <a href="our_job.html" class="navegacion__enlace">Conoce nuestro trabajo</a>
+                <a href="products.html" class="navegacion__enlace">Consulta nuestras ofertas</a>
+                <a href="contact_us.html" class="navegacion__enlace">Contáctanos</a>
+                <a href="about_us.html" class="navegacion__enlace">Acerca De</a>
+                <nav />
+        </div>
+    </header>
+
+    <main class="contenedor__productos">
+        <div class="busqueda bg-white">
+            <div>
+                <p>Buscar</p>
+                <input type="text" class="txtBusqueda" placeholder="Escribe el nombre de una fruta">
+                <button class="btn-submit btn-buscar">Buscar</button>
+            </div>
+            
+            <div class="divMuestraCarrito">
+                <p id="verCarrito" class="no-margin no-padding centrar-texto" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-basket" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M7 10l5 -6l5 6" />
+                        <path d="M21 10l-2 8a2 2.5 0 0 1 -2 2h-10a2 2.5 0 0 1 -2 -2l-2 -8z" />
+                        <path d="M12 15m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                      </svg>
+                <p/>
+                <p class="no-margin no-padding">Carrito</p>
+            </div>
+        </div>
+
+        <div class="navegacion__productos bg-white">
+            <h2>Filtros</h2>
+            <ul class="no-padding filtro__productos">
+                <li>
+                    <a href="" class="item__filtro">Verduras</a>
+                </li>
+                <li>
+                    <a href="" class="item__filtro">Frutas</a>
+                </li>
+                <li>
+                    <a href="" class="item__filtro">Servicios</a>
+                </li>
+            </ul>
+        </div>
+
+        <section class="productos__vista bg-white">
+            <div class="producto">
+                <h2 id="tituProducto" class="titulo-producto">Manzana Fuji</h2>
+                <picture>
+                    <source>
+                    <img src="img/fuji-150x150.jpg" alt="">
+                </picture>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, id.</p>
+                <h2 id="precioProducto" class="titulo-producto">1500</h2>
+                <div class="buttons-producto">
+                    <button class="btn-submit btn-comprar">Comprar ahora</button>
+
+                    <button id="addCarro" class="btn-submit btn-comprar">Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="producto">
+                <h2 id="tituProducto" class="titulo-producto">Manzana Granny Smith</h2>
+                <picture>
+                    <source>
+                    <img src="img/granny-smith-150x150.jpg" alt="">
+                </picture>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, id.</p>
+                <h2 id="precioProducto" class="titulo-producto">2000</h2>
+                <div class="buttons-producto">
+                    <button class="btn-submit btn-comprar">Comprar ahora</button>
+
+                    <button id="addCarro" class="btn-submit btn-comprar">Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="producto">
+                <h2 id="tituProducto" class="titulo-producto">Manzana Red Delicious</h2>
+                <picture>
+                    <source>
+                    <img src="img/red-delicious-150x150.jpg" alt="">
+                </picture>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, id.</p>
+                <h2 id="precioProducto" class="titulo-producto">1200</h2>
+                <div class="buttons-producto">
+                    <button class="btn-submit btn-comprar">Comprar ahora</button>
+
+                    <button id="addCarro" class="btn-submit btn-comprar">Añadir al carrito</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="js/module.js"></script>
+<script src="js/productos.js"></script>
+
+</html>
